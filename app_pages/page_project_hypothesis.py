@@ -17,8 +17,3 @@ def page_project_hypothesis_body():
     st.success(
         f"* The outcome of the project, and the validation of the whole project"
     )
-
-    st.write(f"### Observations")
-    st.success(
-        f"* The findings of the project"
-    )

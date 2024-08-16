@@ -1,7 +1,6 @@
 import streamlit as st
 
 def page_project_summary_body():
-    st.write("### Project Summary")
 
     st.info(
         f"**General Information**\n"
@@ -12,8 +11,8 @@ def page_project_summary_body():
         f"An employee spends around 30 minutes per tree for inspection and an additional minute if treatment is needed.\n"
         f"* Due to the extensive number of cherry trees across multiple farms, this manual inspection process is not scalable.\n\n"
         
-        f"* Thus the IT team suggests implementing a machine learning system using a neural network model to accurately classify " 
-        f"images of cherry leaves as either healthy or infected with powdery mildew.\n\n"
+        f"* **Thus the IT team suggests implementing a machine learning system using a neural network model to accurately classify " 
+        f"images of cherry leaves as either healthy or infected with powdery mildew.**\n\n"
     )
     
     st.write(
@@ -22,8 +21,8 @@ def page_project_summary_body():
     )
 
     st.warning(
-        f"* The dataset comprises images of cherry leaves collected from Farmy & Foods' crops. "
-        f"It can be accessed on [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)."
+        f"* The dataset comprises over 4,000 images from the client's crop fields that show healthy cherry leaves and those affected by powdery mildew.\n"
+        f"* It can be accessed on [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)."
     )
 
     st.success(

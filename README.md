@@ -226,21 +226,15 @@ This page is divided into two sections that provide informative and insightful p
 
 ## 9.0 - Main Data Analysis and Machine Learning Libraries
 
-- **Numpy**: This library is essential for numerical computing in Python. In this project, NumPy is used for handling arrays, performing mathematical operations on the data, and managing the data structures that support machine learning models.
+- **Numpy**: This library is essential for numerical computing in Python. In the mildew detection project, NumPy is used to handle arrays, perform mathematical operations on image data, and manage the underlying data structures that support the machine learning models used to classify cherry leaves.
 
-- **Pandas**: Pandas is crucial for data manipulation and analysis. It provides data structures like DataFrames, which are used in this project to organise, clean, and preprocess the cherry leaf dataset before it is fed into the machine learning models.
+- **Pandas**: Pandas is crucial for data manipulation and analysis. In this project, Pandas is employed to organise, clean, and preprocess the cherry leaf dataset, which includes images labeled as healthy or infected with powdery mildew. This ensures the data is in the right format before being fed into the machine learning models.
 
-- **Matplotlib & Seaborn**: Matplotlib is a plotting library used to create visualisations. In this project, Matplotlib and Seaborn are employed to generate graphs and charts that help in understanding the distribution of data, visualising model performance, and comparing healthy and mildew-infected cherry leaves. Seaborn builds on Matplotlib, providing a high-level interface for drawing attractive and informative statistical graphics.
+- **Matplotlib & Seaborn**: These libraries are used for creating visualisations to better understand the dataset and the model's performance. In the context of mildew detection, Matplotlib and Seaborn are used to generate visual comparisons between healthy and mildew-infected cherry leaves, as well as to plot model accuracy, loss curves, and other key metrics that inform the effectiveness of the detection system.
 
-- **Scikit-learn**: Scikit-learn is a powerful library for machine learning in Python. In this project, Scikit-learn is used for tasks such as splitting the dataset into training and testing sets, model evaluation, and implementing essential machine learning techniques like cross-validation to ensure the reliability of the model's performance.
+- **Scikit-learn**: Scikit-learn plays a key role in the machine learning pipeline for this project. It is used to split the cherry leaf dataset into training and testing sets, evaluate model performance, and apply cross-validation techniques to ensure the model reliably distinguishes between healthy and infected leaves.
 
-- **TensorFlow & Keras**: TensorFlow is a deep learning framework that allows for the creation and training of neural networks. Keras, which is integrated with TensorFlow, is used for building and training the neural network model that classifies cherry leaves as either healthy or infected with powdery mildew. Their flexibility and scalability make them ideal for developing the machine learning model needed to meet the project's objectives.
-
-
-
-
-
-<!-- - Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries. -->
+- **TensorFlow & Keras**: TensorFlow, with its Keras API, is used to build and train the neural network that powers the mildew detection system. In this project, TensorFlow and Keras enable the development of a deep learning model that can accurately classify images of cherry leaves as either healthy or infected with powdery mildew, meeting the project's objective of automating the detection process.
 
 ## 10.0 - Credits
 

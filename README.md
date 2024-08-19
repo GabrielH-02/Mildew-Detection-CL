@@ -1,5 +1,13 @@
 # **Mildrew Detection:** Cherry Leaves
 
+The **Mildew Detection**: Cherry Leaves, app is designed to determine the health status of cherry leaves by identifying whether they are healthy or infected with powdery mildew. By analyzing an image of a cherry leaf, the app provides a prediction regarding its condition.
+
+This application is powered by a supervised machine learning model that employs single-label binary classification. The binary classifier is used to categorize the leaf as either healthy or infected with powdery mildew based on the image analysis.
+
+![responsive-image](documentation/00-responsive-design.png)
+
+The project can be viewed live [here]()
+
 ## 1.0 - Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). This dataset was provided by Code Institute. 
@@ -128,9 +136,11 @@ Based on meeting the Business Objectives, the successful implementation of this 
 The proposed ML solution for detecting powdery mildew in cherry leaves represents a strategic investment in Farmy & Foods’ operational efficiency and product quality. By achieving automation in mildew detection, the company stands to gain significant competitive advantages, including cost savings, improved productivity, and enhanced market reputation. Careful consideration of risks and their mitigation will ensure the project’s success, delivering long-term value to the business.
 
 
-## 6.0 - Dashboard Design 
+## 6.0 - Dashboard Design and Outcome 
 
 ### 6.1 - Page 1: Project Summary
+
+#### 6.1.1 - Page Design
 
 This page is divided into four sections that collectively provide a comprehensive introduction to the project, giving the user an overview and insight into the project's objectives and requirements. The sections are as follows:
 
@@ -153,7 +163,13 @@ This page is divided into four sections that collectively provide a comprehensiv
         1. The client wants to understand how to visually differentiate a healthy cherry leaf from one infected with powdery mildew.
         2. The client is interested in predicting whether a cherry tree is healthy or infected with powdery mildew.
 
+#### 6.1.2 - Page Outcome
+
+![outcome-sum-page](documentation/01-outcome-sum-page.png)
+
 ### 6.2 - Page 2: Leaf Observations
+
+#### 6.2.1 - Page Design
 
 This page consists of three sections that provide insights into the visualization and analysis aspects of the project. Its main purpose is to visually demonstrate the differences between a healthy leaf and one infected with powdery mildew, addressing **Business Requirement 1**. The sections are:
 
@@ -166,7 +182,18 @@ This page consists of three sections that provide insights into the visualizatio
 - **Checkbox 02**
     - An image montage displaying both healthy cherry leaves and mildew-infected cherry leaves.
 
+#### 6.2.2 - Page Outcome
+
+![outcome-observations-page-01](documentation/02-outcome-observations-page-01.png)
+![outcome-observations-page-02](documentation/03-outcome-observations-page-02.png)
+![outcome-observations-page-03](documentation/04-outcome-observations-page-03.png)
+![outcome-observations-page-04](documentation/05-outcome-observations-page-04.png)
+![outcome-observations-page-04](documentation/06-outcome-observations-page-05.png)
+
+
 ### 6.3 - Page 3: Mildew Detector
+
+#### 6.3.1 = Page Design
 
 This page contains three sections that together provide user interaction and a predictive interface to assess the health status of cherry leaves. The primary purpose of this page is to determine whether a cherry leaf is healthy or infected with powdery mildew, thereby addressing **Business Requirement 2**. The sections are:
 
@@ -182,7 +209,15 @@ This page contains three sections that together provide user interaction and a p
     - A table showing the image name and prediction results.
     - A download button to export the results table.
 
+#### 6.3.2 = Page Outcome
+
+![outcome-mildew-dect-page-01](documentation/07-outcome-mildew-dect-page-01.png)
+![outcome-mildew-dect-page-02](documentation/08-outcome-mildew-dect-page-02.png)
+![outcome-mildew-dect-page-03](documentation/09-outcome-mildew-dect-page-03.png)
+
 ### 6.4 - Page 4: Hypothesis and Validation
+
+#### 6.4.1 - Page Design
 
 This page consists of two sections that present the project’s hypothesis and validate the project's findings. Additionally, it provides statements to simplify observations. The sections are:
 
@@ -193,7 +228,13 @@ This page consists of two sections that present the project’s hypothesis and v
 - **Validation**
     - This section clearly explains how the project was validated in alignment with the client's requirements and guidelines.
 
+#### 6.4.2 - Page Outcome
+
+![outcome-hypo-val-page](documentation/10-outcome-hypo-val-page.png)
+
 ### 6.5 - Page 5: ML Performance Metrics
+
+#### 6.5.1 - Page Design
 
 This page is divided into two sections that provide informative and insightful perspectives on the machine learning model’s performance. The sections are:
 
@@ -203,11 +244,29 @@ This page is divided into two sections that provide informative and insightful p
 - **Visuals of Model Performance and Accuracy**
     - Graphical representations of the model's performance and accuracy, providing a visual understanding of the results.
 
+#### 6.5.2 - Page Outcome
 
+![outcome-ml-perfom-page-01](documentation/11-outcome-ml-perfom-page-01.png)
+![outcome-ml-perfom-page-02](documentation/12-outcome-ml-perfom-page-02.png)
+![outcome-ml-perfom-page-03](documentation/13-outcome-ml-perfom-page-03.png)
 
 ## 7.0 - Unfixed Bugs
 
-<!-- - You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. -->
+### 1. Model Training Accuracy and Loss Behavior
+
+**Issue**: On the ML Performance Metrics page, the model's accuracy and loss values peak at a certain point (e.g., epoch 6). This indicates there may be problems with how the model is learning. It suggests that the model's performance is either dropping suddenly or changing unpredictably.
+
+**Potential Causes**:
+- **Overfitting or Underfitting**: The model might be too focused on the training data or not learning enough from it.
+- **Learning Rate Issues**: The learning rate could be too high or too low, affecting how well the model learns.
+- **Model Architecture**: The model’s design might not fit the task well.
+- **Data Quality**: Problems with data quality or processing could be affecting the model's learning.
+
+**Current Status**: The exact cause of this issue is not yet clear. I am currently checking the model's settings, learning rate, design, and data handling to fix this problem.
+
+### Other Unfixed Bugs
+
+- **Current Status**: At this time, no additional bugs or issues have been identified in the project beyond those already mentioned. The project appears to be functioning as expected with no further known problems.
 
 ## 8.0 - Deployment
 

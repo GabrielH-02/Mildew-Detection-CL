@@ -58,9 +58,10 @@ def load_model_and_predict(my_image, version):
     pred_class = target_map[int(pred_proba > 0.5)]
     if pred_class == 'Healthy':
         pred_proba = 1 - pred_proba
-
-    st.write(
-        f"The predictive analysis indicates that the leaf is **{pred_class}** with powdery mildew."
-    )
+    
+    if pred_class == 'Healthy':
+        st.success(f"The predictive interface indicates that the leaf is **HEALTHY**")
+    else: 
+        st.error(f"The predictive interface indicates that the leaf is **INFECTED** with **POWDERY MILDEW**")
 
     return pred_proba, pred_class

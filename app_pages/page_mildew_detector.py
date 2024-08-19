@@ -34,6 +34,8 @@ def page_mildew_detector_body():
 
     st.write("---")
 
+    st.error(f"Please upload a **PNG file** that is at least **256x256** pixels in size.")
+
     images_buffer = st.file_uploader(
         'Upload Cherry Leaf Images. You may select more than one.',
         type='png',

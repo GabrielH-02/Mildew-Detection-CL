@@ -6,7 +6,7 @@ This application is powered by a supervised machine learning model that employs 
 
 ![responsive-image](documentation/00-responsive-design.png)
 
-The project can be viewed live [here]()
+The project can be viewed live [here](https://cl-mildew-detection-gh-fdbcf8e2f112.herokuapp.com/)
 
 ## 1.0 - Dataset Content
 
@@ -275,7 +275,7 @@ This page is divided into two sections that provide informative and insightful p
 
 ### Heroku
 
-- The app live link is: [Here]()
+- The app live link is: [Here](https://cl-mildew-detection-gh-fdbcf8e2f112.herokuapp.com/)
 - Set the `runtime.txt` Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps:
 

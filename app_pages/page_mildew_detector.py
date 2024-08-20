@@ -9,6 +9,7 @@ from src.machine_learning.predictive_analysis import (
                                                     resize_input_image,
                                                     plot_predictions_probabilities
                                                     )
+
 def page_mildew_detector_body():
 
     st.write("## Mildew Detector")

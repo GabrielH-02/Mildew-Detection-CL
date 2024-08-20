@@ -4,6 +4,7 @@ import pandas as pd
 from matplotlib.image import imread
 from src.machine_learning.evaluate_clf import load_test_evaluation
 
+
 def page_ml_performance_metrics():
     st.write("## Mildew Detector; ML Performance Metrics")
     
@@ -39,9 +40,9 @@ def page_ml_performance_metrics():
 
     st.write("---")
 
-
     st.write("### Model History")
     col1, col2 = st.beta_columns(2)
+    
     with col1: 
         model_acc = plt.imread(f"outputs/{version}/model_training_acc.png")
         st.image(model_acc, caption='Model Training Accuracy')
@@ -51,6 +52,7 @@ def page_ml_performance_metrics():
         f"* This fluctuation is more thoroughly discussed in the '**7.0 - Unfixed Bugs**' section "
         f"of the README file, which can be found [here](https://github.com/GabrielH-02/Mildew-Detection-CL)."
         )
+    
     with col2:
         model_loss = plt.imread(f"outputs/{version}/model_training_losses.png")
         st.image(model_loss, caption='Model Training Losses')

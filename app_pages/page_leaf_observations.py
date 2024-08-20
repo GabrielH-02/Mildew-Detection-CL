@@ -9,6 +9,7 @@ from matplotlib.image import imread
 import itertools
 import random
 
+
 def page_leaf_observations_body():
     
     st.write("## Cherry Leaf Observations")
@@ -111,8 +112,8 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
     plt.tight_layout()
     
     st.pyplot(fig=fig)
-    # plt.show()
 
   else:
     print("The label you selected doesn't exist.")
-    print(f"The existing options are: {labels}")        
+    print(f"The existing options are: {labels}")
+      
